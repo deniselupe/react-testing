@@ -1,4 +1,7 @@
-// Create a simple component that renders Hello
-export function Greet() {
-    return <div>Hello</div>;
+type GreetProps = {
+	name?: string;
+};
+
+export function Greet(props: GreetProps) {
+	return <div>Hello {props.name}</div>;
 }
